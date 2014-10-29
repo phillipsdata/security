@@ -37,7 +37,7 @@ class CipherString
      * @return CipherString
      * @throws \InvalidArgumentException
      */
-    public function parse($str, $delimiter = '$')
+    public static function parse($str, $delimiter = '$')
     {
         $parts = explode($delimiter, $str, 3);
         if (count($parts) != 3) {
